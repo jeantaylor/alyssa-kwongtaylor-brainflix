@@ -1,0 +1,131 @@
+html,
+body {
+  margin: 0;
+  font-family: AvenirReg, sans-serif;
+  color: #323232;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Enforces border-box for whole site */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+/* Imports */
+/* Media Query: Tablet */
+/* Media Query: Desktop */
+@font-face {
+  font-family: 'AvenirReg';
+  src: url("../assets/Global-Font/AvenirNextProLT/Linotype-AvenirNextLTPro-Regular.otf");
+}
+
+@font-face {
+  font-family: 'AvenirDemiBold';
+  src: url("../assets/Global-Font/AvenirNextProLT/Linotype-AvenirNextLTPro-Demi.otf");
+}
+
+@font-face {
+  font-family: 'AvenirBold';
+  src: url("../assets/Global-Font/AvenirNextProLT/Linotype-AvenirNextLTPro-Bold.otf");
+}
+
+.header {
+  height: 169px;
+}
+
+.header__wrapper {
+  width: inherit;
+  margin: 0 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo {
+  margin: 0;
+}
+
+.header__search-bar {
+  width: 100%;
+  height: 49px;
+  margin-bottom: 8px;
+}
+
+.header__user-tools {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.header__cta {
+  font-family: 'AvenirDemiBold';
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #0095ff;
+  border-style: none;
+  border-radius: 4px;
+  width: 80%;
+}
+
+.header__cta:hover {
+  background-color: #0065ad;
+}
+
+.header__avatar-wrapper {
+  width: 48px;
+  height: 48px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-left: 5%;
+}
+
+.header__avatar {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: inherit;
+  height: inherit;
+  background-color: #afafaf;
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    height: 80px;
+  }
+  .header__wrapper {
+    margin: 0 3.13%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .header__search-bar {
+    margin-bottom: 16px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .header__wrapper {
+    margin: 0 12.5%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
