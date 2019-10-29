@@ -1,13 +1,21 @@
 import React from "react"; 
 import logo from "../assets/Logo/Logo-brainflix.svg"; 
 import avatar from "../assets/Images/Mohan-muruge.jpg"; 
+import searchIcon from "../assets/Icons/SVG/Icon-search.svg"; 
 
 export default function header() {
     return (
         <header className="header">
             <div className="header__wrapper">
-                <a href="./index.html"><img className="header__logo" src={logo} alt="Brainflix logo"/></a>
-                <input className="header__search-bar" type="text" id="search" placeholder="Search"></input>
+                <a className="header__logo" href="./index.html"><img src={logo} alt="Brainflix logo"/></a>
+                <div className="header__search-wrapper">
+                    <div className="header__search-bar">
+                    <span className="header__search-icon">
+                        <img src={searchIcon} alt="Search icon"/>
+                    </span>
+                    <input className="header__search-field" type="text" id="search" placeholder="Search"></input>
+                </div>
+                </div>
                 <div className="header__user-tools">
                     <button className="header__cta">+ upload</button>
                     <div className="header__avatar-wrapper">
