@@ -3,7 +3,7 @@ import logo from "../assets/Logo/Logo-brainflix.svg";
 import avatar from "../assets/Images/Mohan-muruge.jpg"; 
 import searchIcon from "../assets/Icons/SVG/Icon-search.svg"; 
 
-export default function header() {
+export default function Header() {
     return (
         <header className="header">
             <div className="header__wrapper">
