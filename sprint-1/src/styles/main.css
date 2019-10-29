@@ -193,4 +193,41 @@ body {
     margin-left: 24px;
   }
 }
+
+.main-video__wrapper {
+  background-color: #323232;
+  width: inherit;
+  height: 183px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+}
+
+.main-video__player {
+  height: 183px;
+  width: inherit;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-video__wrapper {
+    height: 400px;
+  }
+  .main-video__player {
+    width: 91.15%;
+    height: inherit;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .main-video__wrapper {
+    height: 540px;
+  }
+  .main-video__player {
+    width: 65.56%;
+  }
+}
 /*# sourceMappingURL=main.css.map */
