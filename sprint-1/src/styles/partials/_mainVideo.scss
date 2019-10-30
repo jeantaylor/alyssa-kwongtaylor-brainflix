@@ -1,7 +1,7 @@
 .main-video {
     &__wrapper {
         background-color: $black;
-        width: inherit; 
+        // width: inherit; 
         height: 183px; 
         display: flex;
         justify-content: center;
@@ -10,7 +10,8 @@
 
     &__player {
         height: 183px; 
-        width: inherit; 
+        margin: 0; 
+        width: 100%; 
     }
 }
 
