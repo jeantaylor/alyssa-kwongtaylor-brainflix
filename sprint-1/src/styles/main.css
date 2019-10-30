@@ -342,19 +342,19 @@ body {
   }
 }
 
-#name {
-  border: #323232 3px solid;
+#msg {
+  border: #0095ff 3px solid;
 }
 
 .conversation {
-  margin: 0 5%;
+  margin: 0 5% 40px 5%;
 }
 
 .conversation__header {
-  font-family: 'AvenirBold';
-  margin: 32px 0 40px 0;
-  font-size: 24px;
-  line-height: 32px;
+  font-family: 'AvenirDemiBold';
+  margin-bottom: 32px;
+  font-size: 14px;
+  line-height: 22px;
 }
 
 .conversation__wrapper {
@@ -368,6 +368,7 @@ body {
 }
 
 .conversation__avatar-wrapper {
+  margin-top: 24px;
   width: 48px;
   height: 48px;
   position: relative;
@@ -431,6 +432,7 @@ body {
 .conversation__field-header {
   color: #afafaf;
   font-family: 'AvenirDemiBold';
+  text-transform: uppercase;
   font-size: 12px;
   line-height: 20px;
   margin-bottom: 5px;
@@ -441,6 +443,8 @@ body {
   border: #e1e1e1 2px solid;
   border-radius: 4px;
   background-color: #fafafa;
+  padding: 13px 8px;
+  margin-bottom: 16px;
 }
 
 .conversation__cta {
@@ -539,18 +543,29 @@ body {
 
 @media only screen and (min-width: 768px) {
   .conversation {
-    margin: 0 3.13%;
+    margin: 0 3.13% 40px 3.13%;
   }
   .conversation__header {
     margin: 48px 0 56px 0;
-    font-size: 36px;
-    line-height: 44px;
+    font-size: 16px;
+    line-height: 24px;
   }
-  .conversation__wrapper {
-    margin: 0 13.02% 40px 13.02%;
+  .conversation__fill {
+    width: 67.59%;
+    margin: 0;
+  }
+  .conversation__field {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    height: 48px;
   }
   .conversation__cta {
-    width: 30.77%;
+    width: 24.58%;
+    margin: 0 5.56% 0 2.22%;
   }
   .conversation__field-wrapper, .conversation__comment-text {
     width: 90.56%;
@@ -566,16 +581,7 @@ body {
 
 @media only screen and (min-width: 1440px) {
   .conversation {
-    margin: 0 12.5%;
-  }
-  .conversation__wrapper {
-    margin: 0 19.17% 40px 19.17%;
-  }
-  .conversation__field-wrapper, .conversation__comment-text {
-    width: 93.70%;
-  }
-  .conversation__cta {
-    width: 31.75%;
+    margin: 0 38.06% 24px 12.5%;
   }
 }
 /*# sourceMappingURL=main.css.map */
