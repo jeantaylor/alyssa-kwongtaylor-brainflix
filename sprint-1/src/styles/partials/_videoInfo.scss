@@ -1,0 +1,94 @@
+.vid-info {
+    &__wrapper {
+        margin: 32px 5% 40px 5%; 
+    }
+
+    &__title {
+        font-family: 'AvenirBold';
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 16px;
+    }
+
+    &__details-wrapper {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 24px;
+        margin-bottom: 24px;
+        border-bottom: 1px solid $mercury;
+        font-size: 14px; 
+        line-height: 22px;
+    }
+
+    &__channel-date, 
+    &__stats {
+        display: flex;
+        width: 72.92%;
+    }
+
+    &__channel-date {
+        margin-bottom: 32px;
+    }
+
+    &__channel {
+        font-family: "AvenirDemiBold"; 
+    }
+
+    &__date {
+        margin-left: 8px; 
+        color: $silver; 
+    }
+
+    &__stat-icon {
+        margin-right: 8px; 
+    }
+
+    &__likes {
+        margin-left: 20px; 
+    }
+
+    &__description {
+        line-height: 26px;
+    }
+}
+
+@include medium {
+    .vid-info { 
+        &__wrapper {
+            margin: 48px 3.13% 64px 3.13%;  
+        }
+
+        &__title {
+            font-size: 36px;
+            line-height: 44px;
+            margin-bottom: 24px;
+        }
+
+        &__details-wrapper {
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            padding-bottom: 0;
+            font-size: 16px; 
+            line-height: 24px;
+        }
+
+        &__channel-date, 
+        &__stats {
+        width: 100%;
+        }
+
+        &__stats {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}
+
+@include large {
+    .vid-info {
+        &__wrapper {
+            margin: 40px 38.06% 64px 12.5%; 
+        }
+    }
+}

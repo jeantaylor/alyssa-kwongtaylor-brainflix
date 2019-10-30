@@ -2,6 +2,8 @@ import React from "react";
 import logo from "../assets/Logo/Logo-brainflix.svg"; 
 import avatar from "../assets/Images/Mohan-muruge.jpg"; 
 import searchIcon from "../assets/Icons/SVG/Icon-search.svg"; 
+import uploadIcon from "../assets/Icons/SVG/Icon-upload.svg"; 
+
 
 export default function Header() {
     return (
@@ -17,7 +19,7 @@ export default function Header() {
                 </div>
                 </div>
                 <div className="header__user-tools">
-                    <button className="header__cta">+ upload</button>
+                    <button className="header__cta"><img className="header__cta-icon" src={uploadIcon} alt="Search icon"/>upload</button>
                     <div className="header__avatar-wrapper">
                         <img className="header__avatar" src={avatar} alt="User avatar"/>
                     </div>

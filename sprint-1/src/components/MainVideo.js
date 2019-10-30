@@ -5,7 +5,7 @@ import poster from "../assets/Images/video-list-0.jpg";
 import video from "../assets/Video/BrainStation-Sample-Video.mp4"; 
 
 
-export default function MainVideo() {
+export default function MainVideo(props) {
     return (
         <section className="main-video">
             <figure className="main-video__wrapper">

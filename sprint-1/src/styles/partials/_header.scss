@@ -53,6 +53,10 @@
     }
 
     &__cta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
         font-family: 'AvenirDemiBold';
         text-transform: uppercase; 
         color: $white;
@@ -62,6 +66,10 @@
         flex-grow: 1;
         &:hover {
             background-color: $brainflix-drkblue;
+        }
+
+        &-icon {
+            margin-right: 8px; 
         }
     }
 

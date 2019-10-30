@@ -110,6 +110,15 @@ body {
 }
 
 .header__cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: 'AvenirDemiBold';
   text-transform: uppercase;
   color: #fff;
@@ -123,6 +132,10 @@ body {
 
 .header__cta:hover {
   background-color: #0065ad;
+}
+
+.header__cta-icon {
+  margin-right: 8px;
 }
 
 .header__avatar-wrapper {
@@ -228,6 +241,105 @@ body {
   }
   .main-video__player {
     width: 65.56%;
+  }
+}
+
+.vid-info__wrapper {
+  margin: 32px 5% 40px 5%;
+}
+
+.vid-info__title {
+  font-family: 'AvenirBold';
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 16px;
+}
+
+.vid-info__details-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #e1e1e1;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.vid-info__channel-date, .vid-info__stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 72.92%;
+}
+
+.vid-info__channel-date {
+  margin-bottom: 32px;
+}
+
+.vid-info__channel {
+  font-family: "AvenirDemiBold";
+}
+
+.vid-info__date {
+  margin-left: 8px;
+  color: #afafaf;
+}
+
+.vid-info__stat-icon {
+  margin-right: 8px;
+}
+
+.vid-info__likes {
+  margin-left: 20px;
+}
+
+.vid-info__description {
+  line-height: 26px;
+}
+
+@media only screen and (min-width: 768px) {
+  .vid-info__wrapper {
+    margin: 48px 3.13% 64px 3.13%;
+  }
+  .vid-info__title {
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 24px;
+  }
+  .vid-info__details-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    padding-bottom: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .vid-info__channel-date, .vid-info__stats {
+    width: 100%;
+  }
+  .vid-info__stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .vid-info__wrapper {
+    margin: 40px 38.06% 64px 12.5%;
   }
 }
 /*# sourceMappingURL=main.css.map */
