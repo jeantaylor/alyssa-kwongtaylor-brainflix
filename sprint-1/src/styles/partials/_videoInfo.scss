@@ -88,7 +88,11 @@
 @include large {
     .vid-info {
         &__wrapper {
-            margin: 40px 38.06% 64px 12.5%; 
+            margin: 40px 0 64px 12.5% 
+        }
+
+        &__stats {
+            margin-right: 32px; 
         }
     }
 }

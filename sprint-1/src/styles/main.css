@@ -206,6 +206,14 @@ body {
   }
 }
 
+@media only screen and (min-width: 1440px) {
+  .main__text-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .main-video__wrapper {
   background-color: #323232;
   height: 183px;
@@ -338,7 +346,10 @@ body {
 
 @media only screen and (min-width: 1440px) {
   .vid-info__wrapper {
-    margin: 40px 38.06% 64px 12.5%;
+    margin: 40px 0 64px 12.5%;
+  }
+  .vid-info__stats {
+    margin-right: 32px;
   }
 }
 
@@ -347,7 +358,7 @@ body {
 }
 
 .conversation {
-  margin: 0 5% 40px 5%;
+  margin: 0 5%;
 }
 
 .conversation__header {
@@ -543,7 +554,7 @@ body {
 
 @media only screen and (min-width: 768px) {
   .conversation {
-    margin: 0 3.13% 40px 3.13%;
+    margin: 0 3.13%;
   }
   .conversation__header {
     margin: 48px 0 56px 0;
@@ -581,7 +592,71 @@ body {
 
 @media only screen and (min-width: 1440px) {
   .conversation {
-    margin: 0 38.06% 24px 12.5%;
+    margin: 0 0 24px 12.5%;
+  }
+}
+
+.suggested {
+  margin: 0 5% 40px 5%;
+}
+
+.suggested__header {
+  margin: 40px 0;
+  font-family: "AvenirDemiBold";
+  color: #afafaf;
+}
+
+.suggested__video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-bottom: 24px;
+}
+
+.suggested__thumbnail {
+  margin: 0;
+  border-radius: 4px;
+  height: 70px;
+  width: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.suggested__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 24px;
+}
+
+.suggested__title {
+  font-family: "AvenirDemiBold";
+  font-size: 14px;
+  line-height: 22px;
+}
+
+@media only screen and (min-width: 768px) {
+  .suggested {
+    margin: 0 51.56% 0 3.13%;
+  }
+  .suggested__title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .suggested {
+    margin: 0 12.5% 0 1.67%;
   }
 }
 /*# sourceMappingURL=main.css.map */

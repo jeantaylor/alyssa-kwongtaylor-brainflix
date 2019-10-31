@@ -1,18 +1,23 @@
+/// *** React Imports
 import React from 'react'; 
-// import axios from 'axios'; 
 import MainVideo from "./MainVideo"; 
 import VideoInfo from "./VideoInfo"; 
 import Comments from "./Comments"; 
+import SuggestedVideos from "./SuggestedVideos"; 
+
+/// *** Image Imports 
+import vid0 from "../assets/Images/video-list-0.jpg"; 
+import vid1 from "../assets/Images/video-list-1.jpg"; 
+import vid2 from "../assets/Images/video-list-2.jpg"; 
+import vid3 from "../assets/Images/video-list-3.jpg"; 
+import vid4 from "../assets/Images/video-list-4.jpg"; 
+import vid5 from "../assets/Images/video-list-5.jpg"; 
+import vid6 from "../assets/Images/video-list-6.jpg"; 
+import vid7 from "../assets/Images/video-list-7.jpg"; 
+import vid8 from "../assets/Images/video-list-8.jpg"; 
+
 
 export default function MainContent() {  
-    /// Axios not used in this sprint. Commented out, but kept in for later reference for now.
-    // const projectKey = "?api_key=2bb7dd6d-ca82-47b6-9411-0b448a4f3395"; 
-    // const commentData = 
-    //     Axios.get("https://project-1-api.herokuapp.com/comments" + projectKey) 
-    //         .then((resp) => {
-    //             return resp.data; 
-    //         })
-
     const commentData = [
         {name: "Micheal Lyons", 
         timestamp: "12/18/2018", 
@@ -44,11 +49,63 @@ export default function MainContent() {
         comments: commentData, 
     };
 
+    const suggested = [
+        {id: "0", 
+        title: "BMX Rampage: 2018 Highlights", 
+        channel: "Red Cow", 
+        image: vid0}, 
+
+        {id: "1", 
+        title: "Become A Travel Pro In One Easy Lesson", 
+        channel: "Todd Welch", 
+        image: vid1},
+
+        {id: "2", 
+        title: "Les Houches The Hidden Gem Of The...", 
+        channel: "Cornelia Blair", 
+        image: vid2},  
+
+        {id: "3", 
+        title: "Travel Health Useful Medical Information...", 
+        channel: "Glen Harper", 
+        image: vid3}, 
+
+        {id: "4", 
+        title: "Cheap Airline Tickets Great Ways To Save", 
+        channel: "Emily Harper", 
+        image: vid4}, 
+
+        {id: "5", 
+        title: "Take A Romantic Break In A Boutique Hotel", 
+        channel: "Ethan Owen", 
+        image: vid5}, 
+
+        {id: "6", 
+        title: "Choose The Perfect Accommodations", 
+        channel: "Lydia Perez", 
+        image: vid6}, 
+
+        {id: "7", 
+        title: "Cruising Destination Ideas", 
+        channel: "Timothy Austin", 
+        image: vid7}, 
+
+        {id: "8", 
+        title: "Train Travel On Track For Safety", 
+        channel: "Scotty Crammer", 
+        image: vid8}, 
+    ];
+
     return (
         <main>
             <MainVideo />
-            <VideoInfo data={mainVideo}/>
-            <Comments data={mainVideo}/>
+            <div className="main__text-wrapper">
+                <div className="main__video-specific-wrapper">
+                    <VideoInfo data={mainVideo} />
+                    <Comments data={mainVideo} />
+                </div>
+                <SuggestedVideos data={suggested} />
+            </div>
         </main>
   );
 }

@@ -3,7 +3,7 @@
 }
 
 .conversation {
-    margin: 0 5% 40px 5%; 
+    margin: 0 5%; 
 
     &__header {
         font-family: 'AvenirDemiBold';
@@ -160,7 +160,7 @@
 
 @include medium {
     .conversation {
-        margin: 0 3.13% 40px 3.13%; 
+        margin: 0 3.13%; 
 
         &__header {
             margin: 48px 0 56px 0; 
@@ -199,6 +199,6 @@
 
 @include large {
     .conversation {
-        margin: 0 38.06% 24px 12.5%;
+        margin: 0 0 24px 12.5%;
     }
 }
