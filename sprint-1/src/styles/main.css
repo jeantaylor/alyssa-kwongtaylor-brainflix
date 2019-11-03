@@ -115,9 +115,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   font-family: 'AvenirDemiBold';
   text-transform: uppercase;
   color: #fff;
@@ -207,6 +204,10 @@ body {
 }
 
 @media only screen and (min-width: 1440px) {
+  .main__video-specific-wrapper {
+    margin: 0 0 24px 12.5%;
+    width: 65%;
+  }
   .main__text-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -342,12 +343,12 @@ body {
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
+  .vid-info__description {
+    width: 75%;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
-  .vid-info__wrapper {
-    margin: 40px 0 64px 12.5%;
-  }
   .vid-info__stats {
     margin-right: 32px;
   }
@@ -588,11 +589,14 @@ body {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
+  .conversation__comment-msg {
+    width: 80vw;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
-  .conversation {
-    margin: 0 0 24px 12.5%;
+  .conversation__comment-msg {
+    width: 100%;
   }
 }
 

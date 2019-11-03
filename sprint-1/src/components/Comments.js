@@ -6,7 +6,6 @@ import likeIcon from "../assets/Icons/PNG/icons8-facebook-like-24.png";
 export default function Comments(props) {
     const thread = props.data.comments.map((comment, index) => {
         return (
-            
                 <div key={index} className="conversation__comment">
                 <div className="conversation__avatar-wrapper">
                     <img className="conversation__avatar" alt="" />
@@ -29,9 +28,7 @@ export default function Comments(props) {
                         </div>
                     </div>
                 </div>
-            </div>
-            
-           
+            </div>           
         );
     })
 

@@ -82,14 +82,18 @@
             display: flex;
             justify-content: flex-end;
         }
+
+        &__description {
+            width: 75%; 
+        }
     }
 }
 
 @include large {
     .vid-info {
-        &__wrapper {
-            margin: 40px 0 64px 12.5% 
-        }
+        // &__wrapper {
+        //     margin: 40px 0 64px 12.5% 
+        // }
 
         &__stats {
             margin-right: 32px; 

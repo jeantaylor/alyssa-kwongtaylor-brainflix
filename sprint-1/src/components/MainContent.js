@@ -94,7 +94,7 @@ export default class MainContent extends Component {
         ]
     }
 
-    render() {
+    render() {        
         return (
             <main>
                 <MainVideo />
@@ -103,7 +103,7 @@ export default class MainContent extends Component {
                         <VideoInfo data={this.state.mainVideo} />
                         <Comments data={this.state.mainVideo} />
                     </div>
-                    <SuggestedVideos data={this.state.suggested} />
+                    <SuggestedVideos list={this.state.suggested} main={this.state.mainVideo} />
                 </div>
             </main>
         );

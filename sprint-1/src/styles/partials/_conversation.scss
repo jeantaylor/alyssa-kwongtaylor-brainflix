@@ -194,11 +194,17 @@
             margin-bottom: 16px;
             justify-content: flex-start;
         }
+
+        &__comment-msg {
+            width: 80vw; 
+        }
     }
 }
 
 @include large {
     .conversation {
-        margin: 0 0 24px 12.5%;
+        &__comment-msg {
+            width: 100%;
+        }
     }
 }
