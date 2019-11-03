@@ -4,6 +4,15 @@ import deleteIcon from "../assets/Icons/SVG/icons8-trash.svg";
 import likeIcon from "../assets/Icons/PNG/icons8-facebook-like-24.png"; 
 
 export default function Comments(props) {
+    function liveTimestamp(epochTime) {
+        let msToday = Date.now(); 
+        let msDiff = msToday - epochTime; 
+        let daysAgo = Math.floor(msDiff / 8.64e+7); 
+        let timesText = daysAgo === 1 ? 'day' : 'days'; 
+        let dynamicTimestamp = daysAgo === 0 ? 'today' : `${daysAgo} ${timesText} ago`; 
+        return dynamicTimestamp; 
+    }
+
     const thread = props.data.comments.map((comment, index) => {
         return (
                 <div key={index} className="conversation__comment">
@@ -13,7 +22,7 @@ export default function Comments(props) {
                     <div className="conversation__comment-text">
                         <div className="conversation__comment-id">
                             <div className="conversation__comment-name">{comment.name}</div>
-                            <div className="conversation__comment-date">{comment.timestamp}</div>
+                            <div className="conversation__comment-date">{liveTimestamp(comment.timestamp)}</div>
                         </div>
                     <div className="conversation__comment-msg">{comment.msg}</div>
                     <div className="conversation__comment-tools">
@@ -45,7 +54,7 @@ export default function Comments(props) {
                             <label className ="conversation__field-header" htmlFor="msg">Join the conversation</label>   
                             <div className="conversation__field">
                                 <textarea className="conversation__fill" id="msg" name="comment" placeholder="That was most easily the most spectacular BMX moment ever"></textarea>
-                                <button type="submit" className="conversation__cta">Comment</button>
+                                <button type="submit" className="conversation__cta" disabled>Comment</button>
                             </div>
                         </div>
                     </form>
