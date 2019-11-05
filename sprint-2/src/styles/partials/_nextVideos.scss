@@ -1,0 +1,55 @@
+.nextVideos {
+    margin: 0 5% 40px 5%; 
+
+    &__header {
+        margin: 40px 0; 
+        font-family: "AvenirDemiBold"; 
+        color: $silver; 
+    }
+
+    &__video {
+        display: flex;
+        align-content: center;
+        margin-bottom: 24px;
+    }
+
+    &__thumbnail {
+        margin: 0; 
+        border-radius: 4px; 
+        height: 70px;  
+        width: 120px; 
+        object-fit: cover;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 24px; 
+    }
+
+    &__title {
+        font-family: "AvenirDemiBold"; 
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+@include medium {
+    .nextVideos { 
+        margin: 0 51.56% 0 3.13%; 
+
+        &__title {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}
+
+@include large {
+    .nextVideos {
+        margin: 0 12.5% 0 0; 
+        padding-left: 36px; 
+        border-left: 1px $mercury solid; 
+    }
+}
