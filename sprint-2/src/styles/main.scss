@@ -9,6 +9,14 @@ body {
     box-sizing: border-box; 
 }
 
+a {
+    text-decoration: none;
+
+    &:visited {
+        color: black; 
+    }
+}
+
 /* Enforces border-box for whole site */
 *, 
 *:before, 
