@@ -396,9 +396,9 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .conversation__avatar {
@@ -611,6 +611,7 @@ body {
 }
 
 .nextVideos__header {
+  text-transform: uppercase;
   margin: 40px 0;
   font-family: "AvenirDemiBold";
   color: #afafaf;

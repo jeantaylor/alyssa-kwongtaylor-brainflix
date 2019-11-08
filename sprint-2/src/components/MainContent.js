@@ -1,15 +1,15 @@
 /// *** React Imports
-// import React, {Component} from 'react'; 
-// import axios from 'axios'; 
-// import {Switch, Router, Link} from 'react-router-dom'; 
-// import MainVideo from "./MainVideo"; 
-// import VideoInfo from "./VideoInfo"; 
-// import Comments from "./Comments"; 
-// import NextVideos from "./NextVideos"; 
+import React, {Component} from 'react'; 
+import axios from 'axios'; 
+import {Switch, Router, Link} from 'react-router-dom'; 
+import MainVideo from "./MainVideo"; 
+import VideoInfo from "./VideoInfo"; 
+import Comments from "./Comments"; 
+import NextVideos from "./NextVideos"; 
 
 /// *** Axios Variables
-// const api = "https://project-2-api.herokuapp.com/"; 
-// const apiKey = "?api_key=c129ab41-3ffe-42dd-9724-711939cd4ab0"; 
+const api = "https://project-2-api.herokuapp.com/"; 
+const apiKey = "?api_key=c129ab41-3ffe-42dd-9724-711939cd4ab0"; 
 
 
 export default class MainContent extends Component {  
@@ -27,6 +27,15 @@ export default class MainContent extends Component {
     state = {
         nextVids: [], 
         mainVideo: {}
+    }
+
+    componentDidUpdate() {
+        if (this.props.match.params.id !== this.state.mainVideo.id) {
+            axios.get(api + `videos/${this.props.match.params.id}` + apiKey) 
+                .then(resp => {
+                    this.setState({mainVideo:resp.data}); 
+                })
+        }
     }
 
     render() {        
