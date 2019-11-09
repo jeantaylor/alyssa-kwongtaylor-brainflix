@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import defaultThumbnail from '../assets/Images/Upload-video-preview.jpg'; 
 
 
 export default function Upload() {
@@ -9,17 +10,17 @@ export default function Upload() {
                 <form className="upload__form" id="upload__form">
                     <div className="upload__form-inputs">
                         <div className="upload__thumbnail-wrapper">
-                            <label className="upload__input-label" for="thumbnail">Video Thumbnail</label>
-                            <img src="./assets/Images/Upload-preview-image.jpg" alt="Upload your video here!" />
+                            <label className="upload__input-label" htmlFor="thumbnail">Video Thumbnail</label>
+                            <img src={defaultThumbnail} alt="Upload your video here!" />
                         </div>
                     </div>
                     <div className="upload__field-wrapper">
                         <div className="upload__title-wrapper">
-                            <label className="upload__input-label" for="title">Title your video</label>
+                            <label className="upload__input-label" htmlFor="title">Title your video</label>
                             <input className="upload__title" type="text" id="title" name="title" placeholder="Add a title to your video" />
                         </div>
                         <div className="upload__desc-wrapper">
-                            <label className="upload__input-label" for="desc">Add a video description</label>
+                            <label className="upload__input-label" htmlFor="desc">Add a video description</label>
                             <input className="upload__desc" type="text" id="desc" name="desc" placeholder="Add a description of your video" />
                         </div>
                     </div>
