@@ -44,6 +44,7 @@ a:visited {
 
 .header {
   height: 169px;
+  border-bottom: 1px solid #e1e1e1;
 }
 
 .header__wrapper {
@@ -208,6 +209,43 @@ a:visited {
   }
   .header__avatar-wrapper {
     margin-left: 24px;
+  }
+}
+
+.upload {
+  margin: 0 5%;
+}
+
+.upload__header {
+  font-family: 'AvenirBold';
+  margin: 32px 0 40px 0;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.upload__field-header {
+  color: #afafaf;
+  font-family: 'AvenirDemiBold';
+  font-size: 12px;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  .upload {
+    margin: 0 3.13%;
+  }
+  .upload__header {
+    margin: 48px 0 56px 0;
+    font-size: 36px;
+    line-height: 44px;
+    border-bottom: 2px solid #e1e1e1;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .upload {
+    margin: 0 12.5%;
   }
 }
 

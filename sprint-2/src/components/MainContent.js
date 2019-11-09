@@ -1,7 +1,6 @@
 /// *** React Imports
 import React, {Component} from 'react'; 
 import axios from 'axios'; 
-import {Switch, Router, Link} from 'react-router-dom'; 
 import MainVideo from "./MainVideo"; 
 import VideoInfo from "./VideoInfo"; 
 import Comments from "./Comments"; 

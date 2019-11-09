@@ -1,0 +1,38 @@
+.upload {
+    margin: 0 5%; 
+
+    &__header {
+        font-family: 'AvenirBold';
+        margin: 32px 0 40px 0; 
+        font-size: 24px;
+        line-height: 32px;
+        
+    }
+
+    &__field-header {
+        color: $silver;
+        font-family: 'AvenirDemiBold';
+        font-size: 12px; 
+        line-height: 20px; 
+        margin-bottom: 5px;
+    }
+}
+
+@include medium {
+    .upload {
+        margin: 0 3.13%; 
+
+        &__header {
+            margin: 48px 0 56px 0; 
+            font-size: 36px;
+            line-height: 44px;
+            border-bottom: 2px solid $mercury; 
+        }
+    }
+}
+
+@include large {
+    .upload {
+        margin: 0 12.5%; 
+    }
+}

@@ -6,7 +6,7 @@ export default function NextVideos({list, main}) {
         if (video.id !== main.id) {
             return (
                 <Link to={`/videos/${video.id}`}>
-                    <div key={index} id="{video.id}" className="nextVideos__video">
+                    <div key="{video.id}" id="{video.id}" className="nextVideos__video">
                         <img className="nextVideos__thumbnail" src={video.image} alt="Video thumbnail"/>
                         <div className="nextVideos__info">
                             <div className="nextVideos__title">{video.title}</div>
