@@ -11,17 +11,17 @@ export default function Upload() {
                     <div className="upload__form-inputs">
                         <div className="upload__thumbnail-wrapper">
                             <label className="upload__input-label" htmlFor="thumbnail">Video Thumbnail</label>
-                            <img src={defaultThumbnail} alt="Upload your video here!" />
+                            <img className="upload__thumbnail" src={defaultThumbnail} alt="Upload your video here!" />
                         </div>
-                    </div>
-                    <div className="upload__field-wrapper">
-                        <div className="upload__title-wrapper">
-                            <label className="upload__input-label" htmlFor="title">Title your video</label>
-                            <input className="upload__title" type="text" id="title" name="title" placeholder="Add a title to your video" />
-                        </div>
-                        <div className="upload__desc-wrapper">
-                            <label className="upload__input-label" htmlFor="desc">Add a video description</label>
-                            <input className="upload__desc" type="text" id="desc" name="desc" placeholder="Add a description of your video" />
+                        <div className="upload__field-wrapper">
+                            <div className="upload__title-wrapper">
+                                <label className="upload__input-label" htmlFor="title">Title your video</label>
+                                <input className="upload__title" type="text" id="title" name="title" placeholder="Add a title to your video" />
+                            </div>
+                            <div className="upload__desc-wrapper">
+                                <label className="upload__input-label" htmlFor="desc">Add a video description</label>
+                                <textarea className="upload__desc" type="text" id="desc" name="desc" placeholder="Add a description of your video" />
+                            </div>
                         </div>
                     </div>
                     <div className="upload__btn-wrapper">
