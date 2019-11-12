@@ -1,0 +1,12 @@
+@include large {
+    .main {
+        &__video-specific-wrapper {
+                margin: 0 0 24px 12.5%;
+                width: 65%; 
+            }
+
+        &__text-wrapper {
+            display: flex;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.main-video {
+    &__wrapper {
+        background-color: $black;
+        // width: inherit; 
+        height: 183px; 
+        display: flex;
+        justify-content: center;
+        margin: 0; 
+    }
+
+    &__player {
+        height: 183px; 
+        margin: 0; 
+        width: 100%; 
+    }
+}
+
+@include medium {
+    .main-video { 
+        &__wrapper {
+            height: 400px; 
+        }
+
+        &__player {
+            width: 91.15%; 
+            height: inherit; 
+        }
+    }
+}
+
+@include large {
+    .main-video {
+        &__wrapper {
+            height: 540px; 
+        }
+
+        &__player {
+            width: 65.56%; 
+        }
+    }
+}
