@@ -1,12 +1,25 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "server directory for brainflix sprint-3",
+  "description": "Server for Sprint-3 Client",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index",
+    "client": "npm start --prefix ../client",
+    "server": "nodemon index.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [],
   "author": "AKwong-Taylor",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  },
+  "dependencies": {
+    "concurrently": "^5.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "uuid": "^3.3.3"
+  }
 }
