@@ -18,14 +18,14 @@ router.post("/", (req, res) => {
         id: newId,
         title: req.body.title,
         channel: "Mohan Murr",
-        image: "../assets/Images/Upload-video-preview.jpg"
+        image: "http://localhost:8080/upload.jpg"
     }
 
     const newVideoDetails = {
         id: newId,
         title: req.body.title,
         channel: "Mohan Murr",
-        image: "../assets/Images/Upload-video-preview.jpg", 
+        image: "http://localhost:8080/upload.jpg", 
         description: req.body.description, 
         views: "0", 
         likes: "0", 

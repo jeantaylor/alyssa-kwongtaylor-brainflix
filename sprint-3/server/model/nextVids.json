@@ -57,6 +57,6 @@
 		"id": "2f3aab8c-e994-4a6d-99e7-9a86bd7f0b6f",
 		"title": "My Journey Thru This Sprint",
 		"channel": "Mohan Murr",
-		"image": "../assets/Images/Upload-video-preview.jpg"
+		"image": "http://localhost:8080/upload.jpg"
 	}
 ]

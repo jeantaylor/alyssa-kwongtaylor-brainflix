@@ -318,7 +318,7 @@
 		"id": "2f3aab8c-e994-4a6d-99e7-9a86bd7f0b6f",
 		"title": "My Journey Thru This Sprint",
 		"channel": "Mohan Murr",
-		"image": "../assets/Images/Upload-video-preview.jpg",
+		"image": "http://localhost:8080/upload.jpg",
 		"description": "I can say with great confidence that I spent 4hrs debugging all to find that I did a bad and called my uuid twice making stuff not match up. ",
 		"views": "0",
 		"likes": "0",
