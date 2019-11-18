@@ -1,5 +1,6 @@
 const express = require("express");
 const router = express.Router();
+const cors = require("cors"); 
 const nextVidsData = __dirname + "/../../model/nextVids.json";
 const mainVideoData = __dirname + "/../../model/mainVideo.json"; 
 const helper = require("../../helper/helper");
@@ -7,6 +8,7 @@ const helper = require("../../helper/helper");
 let nextVids = require(nextVidsData);
 let mainVideo = require(mainVideoData);
 
+router.use(cors()); 
 
 router.get("/", (req, res) => {
     res.json(nextVids); 
